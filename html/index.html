@@ -2,15 +2,29 @@
 <html>
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no">
 <title>Documento sin título</title>
+<link rel="stylesheet" href="../css/bootstrap.min.css">
 <link rel="stylesheet" href="../css/text.css">
 </head>
 
 <body>
-	<h1>Tránsito ágil Tepic</h1>
+	<header>
+		<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+			<div class="container">
+				<div class="navb-header">
+					<a href="index.html">Tráfico ágil Tepic</a>
+				</div>
+			</div>
+		</nav>
+	</header>
 	<center>
-		<button type="button"><p>Nueva publicación</p></button>
+		<button class="btn">Nueva publicacion</button>
 	</center>
-	
+	<section class="main row">
+		<div class="col-md-6">Las publicaciones recientes</div>
+		<div class="col-md-6">Las publicaciones destacadas</div>
+	</section>
+	<script src="../js/jquery-3.2.1.min.js"></script>	
 </body>
 </html>
