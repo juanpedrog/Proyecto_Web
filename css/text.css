@@ -2,18 +2,21 @@
 /* CSS Document */
 h1{
 	
-	background-color: lightblue
+	background-color: lightblue;
 }
 button {
-	background-color:silver
-}
-p {
-	color: white
-	
+	background-color:blue;
 }
 header {
-	background-color: lightblue
+	background-color: lightblue;
 }
-
-
-
+.imagen{
+	width: 500;
+	height: 300;
+}
+.titulo{
+	background-color:powderblue;
+}
+.categorias{
+	background-color:lightgreen;
+}
