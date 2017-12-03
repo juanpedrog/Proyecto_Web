@@ -4,10 +4,18 @@ h1{
 	
 	background-color: lightblue;
 }
+h8{
+
+	background-color: lightblue;
+}
+
 button {
 	background-color:blue;
 }
 header {
+	background-color: lightblue;
+}
+footer{
 	background-color: lightblue;
 }
 .imagen{

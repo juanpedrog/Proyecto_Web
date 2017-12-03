@@ -1,0 +1,42 @@
+html
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, user-scalable=no")
+    title Tránsito Ágil
+    link(rel="stylesheet" href="/css/bootstrap.min.css")
+    link(rel="stylesheet" href="/css/text.css")
+  body
+    div
+      header
+        nav(class="navbar navbar-default")
+          div(class="container-fluid")
+            a(href="/") Tránsito ágil Tepic
+            div(class="btn-group btn-group-jusstified")
+              button(class="btn pull-right btn-outline-info" onClick="location.href='/new'") Nueva publicación
+              button(class="btn pull-right btn-outline-info") Iniciar sesión
+              button(class="btn pull-right btn-outline-info" onClick="location.href='/register'") Registrarse
+    section(class="main row")
+      div(id="pub_recientes" class="col-md-5")
+        h3(class="titulo") Publicaciones recientes
+        br
+        each pub in publicaciones
+          b=pub.nombre
+          &nbsp;
+          p=pub.fecha
+          br
+          p=pub.descripcion
+          img(src="#{pub.ruta_imagen}" width='500' height='300')
+          br
+          h6=pub.like
+            &nbsp;
+            input(type='image' src='/iconos/like.png' width='20' height='20')
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            h6=pub.unlike
+              &nbsp;
+              input(type='image' src='../iconos/unlike.png' width='20' height='20')
+      div(class="col-md-5")
+        h3(class="titulo") Publicaciones destacadas
+      div(class="col-md-2")
+        button(class="btn" style="width: 100%") Nueva publicación
+        h1(class="categorias") Categorias
+    script(src="/js/jquery-3.2.1.min.js")
